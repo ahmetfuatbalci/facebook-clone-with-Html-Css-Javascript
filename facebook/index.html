@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/856d3800b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="Socialbook_img/facebook-logo-png.png" class="logo">
+            <ul>
+                <li><img src="Socialbook_img/notification.png" </li>
+                <li><img src="Socialbook_img/inbox.png" </li>
+                <li><img src="Socialbook_img/video.png" </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="Socialbook_img/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="Socialbook_img/newProfile.jfif">
+            </div>
+        </div>
+        <!-------------Setting   Menu-------------->
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="Socialbook_img/newProfile.jfif">
+                    <div>
+                        <p>Jack Grealish</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="Socialbook_img/feedback.png">
+                    <div>
+                        <p>Give feeback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="Socialbook_img/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy<img src="Socialbook_img/arrow.png" width="5px"> </a>
+                </div>
+                <div class="settings-links">
+                    <img src="Socialbook_img/help.png" class="settings-icon">
+                    <a href="#">Help & Support<img src="Socialbook_img/arrow.png" width="5px"> </a>
+                </div>
+                <div class="settings-links">
+                    <img src="Socialbook_img/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="Socialbook_img/arrow.png" width="5px"> </a>
+                </div>
+                <div class="settings-links">
+                    <img src="Socialbook_img/logout.png" class="settings-icon">
+                    <a href="#">Logout<img src="Socialbook_img/arrow.png" width="5px"> </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"> <img src="Socialbook_img/news.png">Latest News</a>
+                <a href=" #"> <img src="Socialbook_img/friends.png">Friends</a>
+                <a href="#"> <img src="Socialbook_img/group.png">Group</a>
+                <a href="#"> <img src="Socialbook_img/marketplace.png">Market</a>
+                <a href="#"> <img src="Socialbook_img/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Short Cuts</p>
+                <a href="#"> <img src="Socialbook_img/shortcut-1.png">Web Developers</a>
+                <a href="#"> <img src="Socialbook_img/shortcut-2.png">Web Design Course</a>
+                <a href="#"> <img src="Socialbook_img/shortcut-3.png">Full Stack Developers</a>
+                <a href="#"> <img src="Socialbook_img/shortcut-4.png">Website Experts</a>
+            </div>
+        </div>
+        <!-- Main Content --   -->
+        <div class=" main-content">
+            <div class="story-gallery">
+                <div class="story story-1">
+                    <img src="Socialbook_img/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story-2">
+                    <img src="Socialbook_img/ali.jfif">
+                    <p>Ali</p>
+                </div>
+                <div class="story story-3">
+                    <img src="Socialbook_img/hasan.jfif">
+                    <p>Hasan</p>
+                </div>
+                <div class="story story-4">
+                    <img src="Socialbook_img/volkan.jfif">
+                    <p>Volkan</p>
+                </div>
+                <div class="story story-5">
+                    <img src="Socialbook_img/member-2.png">
+                    <p>Murat</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="Socialbook_img/newProfile.jfif">
+                    <div>
+                        <p>Jack Grealish</p>
+                        <small>Public<i class="fas fa-angle-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Jack?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"> <img src="Socialbook_img/live-video.png">Live Video</a>
+                        <a href="#"> <img src="Socialbook_img/photo.png">Photo/Video</a>
+                        <a href="#"> <img src="Socialbook_img/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Socialbook_img/newProfile.jfif">
+                        <div>
+                            <p>Jack Grealish</p>
+                            <span>June 18 2021, 11.18 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">
+                    HTML and CSS provide structure, format, and style to content. JavaScript comes into play once a
+                    web
+                    page does something beyond displaying static content. Ecma International develops JavaScript
+                    specifications, and the World Wide Web Consortium (W3C) develops HTML and CSS specifications.
+                    <a href="#">#Javascript</a>
+                    <a href="#">#HTML</a>
+                </p>
+                <img src="Socialbook_img/html.jfif" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Socialbook_img/like-blue.png">120</div>
+                        <div><img src="Socialbook_img/comments.png">49</div>
+                        <div><img src="Socialbook_img/share.png">15</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="Socialbook_img/newProfile.jfif"> <i class="fas fa-angle-down"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Socialbook_img/newProfile.jfif">
+                        <div>
+                            <p>Jack Grealish</p>
+                            <span>May 1 2021, 16.05 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text second-post">
+                    Web page designers <span>use JavaScript in many different ways</span>. One of the most common is to
+                    do field
+                    validation in a form. Many Web sites gather information from users in online forms, and JavaScript
+                    can help validate entries. For example, the programmer might validate that a person's age entered
+                    into a form falls between 1 and 120.
+                    <a href="#">#Javascript</a>
+                    <a href="#">#CSS</a>
+                </p>
+                <img src="Socialbook_img/js.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Socialbook_img/like.png">98</div>
+                        <div><img src="Socialbook_img/comments.png">15</div>
+                        <div><img src="Socialbook_img/share.png">3</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="Socialbook_img/newProfile.jfif"> <i class="fas fa-angle-down"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Socialbook_img/newProfile.jfif">
+                        <div>
+                            <p>Jack Grealish</p>
+                            <span>March 15 2021, 10.15 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text second-post">
+                    Sometimes JavaScript can be weird and hoisting is one of the weird things in JavaScript. That’s why
+                    you need to understand this concept if you want to avoid errors and bugs in your code, especially if
+                    you’re using var .
+                    <a href="#">#Javascript</a>
+                    <a href="#">#CSS</a>
+                </p>
+                <img src="Socialbook_img/html-css.jfif" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Socialbook_img/like.png">113</div>
+                        <div><img src="Socialbook_img/comments.png">21</div>
+                        <div><img src="Socialbook_img/share.png">8</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="Socialbook_img/newProfile.jfif"> <i class="fas fa-angle-down"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <button type="button" class="load-more-btn">Load more</button>
+        </div>
+        <!-- Right SideBar --  -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See all</a>
+            </div>
+
+            <div class="event">
+                <div class="left-even">
+                    <h3>5</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-even">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Tekno Kent</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-even">
+                    <h3>18</h3>
+                    <span>July</span>
+                </div>
+                <div class="right-even">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Gazi Kent</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <!-- Advertisement-->
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="Socialbook_img/advertisement.jpg" class="sidebar-ads">
+            <!-- Conversation-->
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <!-- User Icons-->
+            <div class="online-list">
+                <div class="online">
+                    <img src="Socialbook_img/ali.jfif">
+                </div>
+                <p>Ali</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="Socialbook_img/volkan.jfif">
+                </div>
+                <p>Volkan</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="Socialbook_img/hasan.jfif">
+                </div>
+                <p>Hasan</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>© 2021 FACEBOOK English (US) </p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
